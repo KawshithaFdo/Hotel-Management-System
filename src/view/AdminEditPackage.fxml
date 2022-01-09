@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminEditPackageContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyAdminRooms" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminEditPackageController">
+   <children>
+      <Label layoutX="101.0" layoutY="36.0" prefHeight="49.0" prefWidth="352.0" text="Edit Package">
+         <font>
+            <Font name="Algerian" size="43.0" />
+         </font>
+      </Label>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="128.0" promptText="Package Name" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="309.0" layoutY="128.0" promptText="Edit Item01" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="274.0" promptText="Edit Item04" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="309.0" layoutY="200.0" promptText="Edit Item03" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="80.0" layoutY="200.0" promptText="Edit Item02" />
+      <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="332.0" onAction="#GoBack" prefHeight="41.0" prefWidth="71.0" style="-fx-background-color: #2980b9;" text="GoBack" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="430.0" layoutY="332.0" onAction="#EditPackage" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #2980b9;" text="Edit Package" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="325.0" layoutY="274.0" promptText="Edit Price" />
+   </children>
+</AnchorPane>

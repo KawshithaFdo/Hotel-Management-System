@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainFormContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #747d8c;" styleClass="bodybg" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <Label layoutX="59.0" layoutY="38.0" prefHeight="65.0" prefWidth="438.0" text="Hotel Blue Ocean" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Broadway" size="44.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="74.0" layoutY="251.0" onAction="#OpenAdminForm" pickOnBounds="false" prefHeight="45.0" prefWidth="153.0" text="Admin" textAlignment="CENTER" textFill="#0a0909">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="High Tower Text" size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="278.0" layoutY="251.0" onAction="#OpenReceptionistForm" prefHeight="45.0" prefWidth="169.0" ripplerFill="#bc7575" text="Receptionist" textAlignment="CENTER" textFill="#0a0909">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="High Tower Text" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

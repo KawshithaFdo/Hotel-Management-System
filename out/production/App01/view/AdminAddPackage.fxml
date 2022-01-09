@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddPackageContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyAdminRooms" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAddPackageController">
+   <children>
+      <Label layoutX="102.0" layoutY="45.0" prefHeight="45.0" prefWidth="319.0" text="Add Packages">
+         <font>
+            <Font name="Algerian" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="56.0" layoutY="132.0" promptText="Meal Package Name" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="300.0" layoutY="132.0" promptText="Meal Package Type" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="56.0" layoutY="200.0" promptText="Item01" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="56.0" layoutY="269.0" promptText="Item03" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="300.0" layoutY="269.0" promptText="Item04" />
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="287.0" layoutY="200.0" promptText="Item02" />
+      <JFXButton buttonType="RAISED" layoutX="56.0" layoutY="343.0" onAction="#GoBack" style="-fx-background-color: #2980b9;" text="GoBack" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="399.0" layoutY="343.0" onAction="#AddPackage" style="-fx-background-color: #2980b9;" text="Add Package" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="177.0" layoutY="328.0" promptText="Price" />
+   </children>
+</AnchorPane>

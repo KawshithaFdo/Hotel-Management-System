@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="BookingContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyAdminRooms" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookingFormController">
+   <children>
+      <Label layoutX="96.0" layoutY="26.0" text="Bookings ">
+         <font>
+            <Font name="Algerian" size="67.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="31.0" layoutY="334.0" onAction="#GoBack" style="-fx-background-color: #2980b9;" text="GoBack" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="198.0" layoutY="137.0" onAction="#add" text="Add Booking" textFill="#0018ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="198.0" layoutY="185.0" onAction="#cancel" text="Cancel Booking" textFill="#0018ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="190.0" layoutY="230.0" onAction="#maintain" text="Room maintaines" textFill="#0018ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

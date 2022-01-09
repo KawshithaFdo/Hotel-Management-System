@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminFormContext" prefHeight="368.0" prefWidth="611.0" styleClass="bodyAdmin" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminFormController">
+   <children>
+      <Label layoutX="40.0" layoutY="23.0" prefHeight="53.0" prefWidth="350.0" text="Admin    LogIn">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="45.0" />
+         </font></Label>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="323.0" onAction="#gotoHome" pickOnBounds="false" text="Click Here to Main Menu" textFill="WHITE" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="46.0" layoutY="124.0" prefHeight="31.0" prefWidth="188.0" promptText="Admin ID" unFocusColor="#030303">
+         <font>
+            <Font size="17.0" />
+         </font></JFXTextField>
+      <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="295.0" layoutY="124.0" prefHeight="31.0" prefWidth="209.0" promptText="Password" unFocusColor="BLACK">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" cancelButton="true" layoutX="454.0" layoutY="323.0" onAction="#OpenNewAdmin" text="Create  a account" textFill="WHITE" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="209.0" layoutY="202.0" onAction="#OpenAdminLogin" prefHeight="46.0" prefWidth="104.0" ripplerFill="#1908d7" style="-fx-background-color: #2980b9;" text="LogIn" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

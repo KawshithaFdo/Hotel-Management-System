@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReceptionistLoginContext" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d1ccc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistLoginFormController">
+   <children>
+      <Label layoutX="30.0" layoutY="22.0" prefHeight="75.0" prefWidth="516.0" text="Welcome Hotel BlueOcean" textFill="#1500ff">
+         <font>
+            <Font name="Viner Hand ITC" size="37.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="136.0" onAction="#ViewRoomsandMealsAvailable" text="Available Rooms And Meal Plans" textFill="#0022ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="194.0" layoutY="192.0" onAction="#ViewBookings" text="View Bookings" textFill="#0022ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="349.0" onAction="#GoBack" style="-fx-background-color: #2980b9;" text="Go Back" textFill="WHITE" />
+      <JFXButton layoutX="202.0" layoutY="247.0" onAction="#ViewRooms" text="View Rooms" textFill="#0022ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

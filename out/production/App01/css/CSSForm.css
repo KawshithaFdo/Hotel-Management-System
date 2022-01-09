@@ -1,0 +1,21 @@
+.bodyAdmin {
+    -fx-background-image: url("/asserts/W01.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.bodyReceptionist {
+    -fx-background-image: url("/asserts/W01.jpg");
+    -fx-background-size: 100% 100%;
+}
+.bodyroom {
+    -fx-background-image: url("/asserts/p1.jpg");
+    -fx-background-size: 100% 100%;
+}
+.bodybg {
+    -fx-background-image: url("/asserts/b02.jpg");
+    -fx-background-size: 100% 100% ;
+}
+.bodyAdminRooms {
+    -fx-background-image: url("/asserts/p4.jpg");
+    -fx-background-size: 100% 100% ;
+}

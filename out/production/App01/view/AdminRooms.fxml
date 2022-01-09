@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AdminRoomsContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyroom" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminRoomsController">
+   <children>
+      <Label layoutX="64.0" layoutY="33.0" prefHeight="44.0" prefWidth="240.0" text=" Rooms">
+         <font>
+            <Font name="Algerian" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="23.0" layoutY="355.0" onAction="#goBack" style="-fx-background-color: #2980b9;" text="GoBack" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="198.0" layoutY="127.0" onAction="#AddRoom" prefHeight="31.0" prefWidth="137.0" text="Add Room" textFill="#0400ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="184.0" layoutY="214.0" onAction="#EditRoom" prefHeight="48.0" prefWidth="165.0" text="Edit Rooms" textFill="#0400ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="154.0" layoutY="307.0" onAction="#RoomAvailability" prefHeight="48.0" prefWidth="265.0" text="Turn Rooms Availability" textFill="#0400ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

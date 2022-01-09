@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReceptionistViewBookingContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyAdminRooms" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistViewBookingFormController">
+   <children>
+      <Label layoutX="105.0" layoutY="14.0" text="Add A Booking">
+         <font>
+            <Font name="Algerian" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="26.0" layoutY="73.0" prefHeight="31.0" prefWidth="521.0" promptText="Name">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtNic" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="21.0" layoutY="119.0" promptText="NIC">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContact" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="300.0" layoutY="119.0" promptText="Contact">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="21.0" layoutY="169.0" prefHeight="31.0" prefWidth="500.0" promptText="EMail">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="21.0" layoutY="221.0" prefHeight="31.0" prefWidth="500.0" promptText="Address">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="355.0" onAction="#GoBack" style="-fx-background-color: #2980b9;" text="GoBack" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="459.0" layoutY="355.0" onAction="#AddBooking" style="-fx-background-color: #2980b9;" text="Add  Booking" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtSDate" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="26.0" layoutY="274.0" prefHeight="31.0" prefWidth="149.0" promptText="Start Date">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEndDate" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="212.0" layoutY="274.0" prefHeight="31.0" prefWidth="149.0" promptText="End Date">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtPrice" alignment="TOP_LEFT" focusColor="BLACK" labelFloat="true" layoutX="412.0" layoutY="274.0" prefHeight="31.0" prefWidth="149.0" promptText="Price">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </JFXTextField>
+   </children>
+</AnchorPane>

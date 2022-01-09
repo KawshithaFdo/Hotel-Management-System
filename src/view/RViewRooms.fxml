@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="RoomViewContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyAdminRooms" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RViewRoomsController">
+   <children>
+      <Label layoutX="106.0" layoutY="37.0" text="Rooms View">
+         <font>
+            <Font name="Algerian" size="54.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="220.0" layoutY="146.0" onAction="#RoomMaintain" text="Room Maintains" textFill="#0400ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="58.0" layoutY="342.0" onAction="#GoBack" style="-fx-background-color: #2980b9;" text="GoBack" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="220.0" layoutY="210.0" onAction="#RoomAvailable" text="Room Available" textFill="#0d21ff" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

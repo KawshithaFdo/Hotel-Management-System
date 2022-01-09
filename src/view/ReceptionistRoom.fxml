@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReceptionistRoomContext" prefHeight="400.0" prefWidth="600.0" styleClass="bodyAdminRooms" stylesheets="@../css/CSSForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistRoomController">
+   <children>
+      <Label layoutX="11.0" layoutY="21.0" prefHeight="50.0" prefWidth="582.0" text="View Rooms &amp; Packages Availability">
+         <font>
+            <Font name="Algerian" size="29.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="60.0" layoutY="138.0" onAction="#RSingleRoom" style="-fx-background-color: #2980b9;" text="Single Rooms" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="229.0" onAction="#RTripleRoom" style="-fx-background-color: #2980b9;" text="Triple Rooms" textFill="#f8f1f1">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="185.0" onAction="#RDoubleRoom" style="-fx-background-color: #2980b9;" text="Double Rooms" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="354.0" layoutY="185.0" onAction="#RChineseMeal" style="-fx-background-color: #2980b9;" text="Chinese Meal" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="354.0" layoutY="138.0" onAction="#RLocalMeal" style="-fx-background-color: #2980b9;" text="Local Meal" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="355.0" layoutY="229.0" onAction="#RFrenchMeal" style="-fx-background-color: #2980b9;" text="French Meal" textFill="#ebebeb">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="279.0" onAction="#RQuadRoom" style="-fx-background-color: #2980b9;" text="Quad Rooms" textFill="#ebebeb">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="84.0" layoutY="89.0" text="Rooms">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="343.0" layoutY="89.0" text="Packages">
+         <font>
+            <Font name="Arial Italic" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="248.0" layoutY="69.0" orientation="VERTICAL" prefHeight="259.0" prefWidth="0.0" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="355.0" onAction="#GoBack" style="-fx-background-color: #2980b9;" text="GoBack" textFill="#ebebeb">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
